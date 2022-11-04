@@ -1,0 +1,8 @@
+
+<div class="logo-fondo"></div>
+
+.logo-fondo{
+	min-width:100px;
+	min-height: 100px;
+    background: url(https://cloud.modyocdn.com/uploads/6780c252-e9a0-47bf-87c6-43077c5215ed/original/minimal_develop.jpg) center no-repeat;
+}

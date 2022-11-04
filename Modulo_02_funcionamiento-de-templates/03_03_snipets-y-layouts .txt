@@ -1,0 +1,11 @@
+{% assign primary = 'rgba(207, 55, 112, 1)' %}
+{% assign dark = 'rgba(255, 255, 255, 1)' %}
+{% assign white = 'rgba(68, 76, 96, 1)' %}
+{% assign font_body = "'Menlo', sans-serif" %}
+
+.ejemplo{
+	border: solid 4px {{primary}};
+	background: {{light }};
+	color: {{secondary}};
+}
+
