@@ -1,0 +1,43 @@
+{% assign nombre_empresa = "Dynamic Bank" %}
+{% assign mostrar_imagen = spaces['modyo-m301'].types['configuracion'].entry.mostrar_imagen %}
+
+ 
+
+<div id='jumbotron' class='my-md-5 py-5'>
+  <div class='mb-md-5'>
+    <div class='row align-items-center'>
+      <div class='col-12 col-md-7 order-2 order-md-1'>
+        <h1 class='mb-3 display-4'><b>Welcome to Modyo's 
+					<span class="text-primary"> 
+					{{nombre_empresa | upcase}}
+					</span></b></h1>
+        <p class='mb-4'>You can modify or create new styles and javascript in the <b>Template Builder</b> and modify or create new pages in the <b>Page Builder</b>, Let's go to <a href='{{ site.url }}/admin' target='_blank' rel='noreferrer'>Modyo</a>.</p>
+				
+				
+				{% if mostrar_imagen == true %}
+					<p class='mb-4'>For more information, please review:</p>
+					<a class='btn btn-primary' href='{{site.url}}/examples'>Examples</a>
+					<a class='btn btn-outline-primary ml-md-2' href='{{site.url}}/about-minimal'>Documentation</a>
+				
+				{% else %}
+				
+				<div class="mt-5 border-top pt-5">
+<h4 class="h2 mb-3">DYNAMIC APP, <span class="font-weight-normal">take your bank everywhere</span></h4>
+<a href="https://play.google.com/store/apps/details?id=com.modyo.dynamic" onclick="gtag('event', 'click', {'event_category': 'button', 'event_label': 'CTA APP'});"><img src="https://cloud.modyocdn.com/uploads/36e7b591-d60d-4312-b1ad-cd984533206a/original/download_app.png" alt="Download"></a>
+            </div>
+
+				
+				{% endif %} 
+				
+				
+      </div>
+      <div class='col-12 col-md-5 mb-4 mb-md-0 order-1 order-md-2'>
+        
+				{% if mostrar_imagen == true %}
+				<img src="https://cloud.modyocdn.com/uploads/6780c252-e9a0-47bf-87c6-43077c5215ed/original/minimal_develop.jpg" alt="Develop In Modyo">
+				{% endif %}
+				
+      </div>
+    </div>
+  </div>
+</div>

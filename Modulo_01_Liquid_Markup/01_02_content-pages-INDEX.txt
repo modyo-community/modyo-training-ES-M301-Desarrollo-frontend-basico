@@ -1,0 +1,13 @@
+<!-- Entries index example -->
+<div >
+	{% for entry in entries %}
+
+			<div class=" border-bottom p-1"> 
+				<a class="  text-decoration-none" href="{{ entry.meta.url }}">
+					<h4 class="h6 text-dark">{{ entry.meta.title }}</h4>
+					<p class="text-muted">{{ entry.fields.short_description }}</p>
+				</a>
+			</div>
+
+	{% endfor %}
+</div>

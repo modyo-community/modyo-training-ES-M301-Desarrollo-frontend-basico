@@ -1,0 +1,37 @@
+{%  assign entries = spaces['modyo-m301'].types['benefits'].entries | sort_by: 'name' order:'desc'  %}
+
+
+<div class="py-5" id="benefits">
+	<div class="container my-5">
+		
+		
+		<div class="row justify-content-center mb-4">
+			<div class="col-12 col-md-8 text-center">
+				<h3 class="text-dark">Be part of a world of benefits designed especially for you</h3>
+				<p class="text-primary">For us the most important thing is that you enjoy your banking</p>
+			</div>
+		</div>
+		
+		
+		<div class="row">
+			
+			
+			{% for entry in entries %}
+			<div class="col-12 col-md-4  d-flex">
+				<div class="card shadow-sm w-100 rounded text-decoration-none" href="{{ entry.meta.url }}">
+					<figure class="m-0">
+						<img aria-hidden="true" src="{{ entry.fields['Cover'].url }}" alt="{{ entry.meta.title }}" class="w-100 rounded-top"/>
+					</figure>
+					<figcaption class="pt-4 px-4 pb-2">
+						<h4 class="h6 text-dark">{{ entry.meta.title }}</h4>
+						<p class="text-muted">{{ entry.fields.short_description }}</p>
+					</figcaption>
+				</div>
+ 
+
+			</div>
+			{% endfor %}
+			
+		</div>
+	</div>
+</div>

@@ -1,0 +1,25 @@
+{%  assign entries = spaces['modyo-m301'].types['benefits'].entries 
+
+| limit: 1 
+| by_lang: 'en' 
+| by_category : 'things-to-do' 
+| by_tags: 'featured' 
+
+%}
+
+{% for entry in entries %}
+<div class="row justify-content-center bg-dark text-white pt-5">
+	<figure class="col-7 col-md-3 mb-4 m-md-0">
+		<img class="w-100" src="https://cloud.modyocdn.com/uploads/5e31b820-6491-4d6c-bbe6-1a84114af40f/original/testimonio_1_1_.png" alt="placeholder">
+	</figure>
+	<div class="figcaption col-11 col-md-6">
+		<figcaption class="p-0 p-md-5">
+			<h3 class="d-none d-md-block  h1 mb-4">New benefits!!</h3>
+			
+			<p class="font-weight-bold">{{ entry.meta.name | upcase }}</p>
+			<p>{{ entry.fields.short_description }}</p>
+			<p>{{ entry.fields.description  | truncate: 150, "..."  }}</p>
+		</figcaption>
+	</div>
+</div>
+{% endfor %}

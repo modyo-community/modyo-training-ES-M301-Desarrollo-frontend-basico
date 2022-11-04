@@ -1,0 +1,161 @@
+body {
+  background: #fff;
+  color: #4d4d4d;
+  font-family: "Avenir", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+footer {
+  background: #fafbfc;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 4rem 0;
+  position: relative;
+  z-index: 2;
+}
+img {
+  max-width: 100%;
+}
+/* HEADLINES */
+h1 {
+  font-size: 44px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 18px;
+}
+.btn {
+  padding: 0.75rem 1.5rem;
+}
+.btn-primary {
+  background-color: #3569ce;
+}
+.btn-secondary {
+  background-color: #3dc681;
+  border-color: #3dc681;
+}
+
+/* NAV */
+.nav-link {
+  cursor: pointer;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #3569ce;
+}
+
+.info-plans img {
+  float: right;
+  margin-left: 0px;
+  max-width: none;
+  width: 800px;
+}
+/* NAVBAR */
+.navbar {
+  justify-content: flex-start;
+  padding: 0.7rem 0;
+}
+.navbar-nav {
+  margin-left: 1rem;
+}
+.navbar-nav {
+  flex-direction: row;
+}
+.navbar-brand img {
+  height: 27px;
+}
+.navbar-nav .nav-link {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Header */
+#header {
+  background: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 5;
+}
+#header .container {
+  position: relative;
+}
+/* home highlight */
+#home-highlight {
+  height: 600px;
+  background-image: url(https://cloud.modyocdn.com/uploads/161967db-f088-4631-a283-0d8533cf57bd/original/demosites.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+.highlight-caption {
+  background: #3dc681;
+  padding: 2rem;
+  text-align: left;
+  width: 550px;
+  align-self: center;
+  margin-left: 15%;
+  color: #ffffff;
+}
+.highlight-caption p {
+  font-size: 21px;
+}
+.caption-actions {
+  margin-top: 2rem;
+  text-align: right;
+}
+.caption-actions a {
+  background: #3569ce;
+  color: #fff;
+  display: inline-block;
+  font-size: 21px;
+  padding: 1rem 3rem;
+}
+.caption-actions a:hover {
+  background: #04598f;
+  text-decoration: none;
+}
+
+/* Financial options */
+#financial-options {
+  background: #f4f4f4;
+  position: relative;
+  z-index: 1;
+}
+#financial-options .container {
+  position: relative;
+  top: -3rem;
+}
+#financial-options .row > div a {
+  min-height: 240px;
+}
+.box-financial {
+  background: #fff;
+  display: block;
+  padding: 2rem;
+  text-align: center;
+}
+.box-financial img {
+  height: 60px;
+}
+.box-financial h4 {
+  color: #094279;
+  margin-top: 1rem;
+}
+
+/*Divisor*/
+.divisor-lightblue {
+  background: #3569ce;
+  color: #fff;
+  padding: 2rem 0;
+}
+.divisor-section .media {
+  align-items: normal;
+}
+
+.actions-media {
+  align-items: center;
+  display: flex;
+}

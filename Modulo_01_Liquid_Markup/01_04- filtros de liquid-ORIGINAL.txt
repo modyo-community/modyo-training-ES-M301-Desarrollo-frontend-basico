@@ -1,0 +1,15 @@
+<div class="row justify-content-center bg-dark text-white pt-5">
+	<figure class="col-7 col-md-3 mb-4 m-md-0">
+		<img class="w-100" src="https://cloud.modyocdn.com/uploads/5e31b820-6491-4d6c-bbe6-1a84114af40f/original/testimonio_1_1_.png" alt="Adriana Conde">
+	</figure>
+	<div class="figcaption col-11 col-md-6">
+		<figcaption class="p-0 p-md-5">
+			<h3 class="d-none d-md-block  h1 mb-4">New benefits!!</h3>
+
+			<p class="font-weight-bold">BENEFIT TITLE </p>
+			<p> DESCRIPTION </p>
+			<p> DESCRIPTION </p>
+
+		</figcaption>
+	</div>
+</div>
